@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@400;700&family=Pacifico&family=Righteous&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <section id="inputs">
+        <div class="container">
+            <header class="text-center my-5">
+                <h1>Bookmarker</h1>
+            </header>
+            <div class="text-center mb-5">
+                <h2>Bookmark your favorite sites</h2>
+            </div>
+            <div class="inputs">
+                <i class="fa-solid fa-hard-drive"></i>
+                <label for="siteName" class="fw-bolder mb-2">Site Name</label>
+                <input type="text" class="form-control mb-4" id="siteName" placeholder="Bookmark name">
+                <i class="fa-solid fa-link"></i>
+                <label for="siteURL" class="fw-bolder mb-2">Site URL</label>
+                <input type="text" class="form-control" id="siteURL" placeholder="Website URL">
+                <div class="btn-layer text-center py-4">
+                    <button id="sub-btn" class="btn px-5 ">Submit</button>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="saved-sites" class="my-5">
+        <div class="container">
+            <table class="table text-center">
+                <thead>
+                    <tr>
+                        <th class="bg-light">Index</th>
+                        <th class="bg-light">Website Name</th>
+                        <th class="bg-light">Visit</th>
+                        <th class="bg-light">Delete</th>
+                    </tr>
+                </thead>
+                <tbody id="tableBody">
+                    
+                </tbody>
+            </table>
+        </div>
+
+    </section>
+
+
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>

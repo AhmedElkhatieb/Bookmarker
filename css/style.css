@@ -1,0 +1,98 @@
+*::selection {
+  background-color: #fec260;
+  color: #352e28;
+}
+body {
+  background-color: #f7ecde;
+}
+h1 {
+  font-family: "Pacifico", cursive;
+  font-size: 50px;
+  font-weight: 500;
+  line-height: 60px;
+  position: relative;
+  display: inline-block;
+}
+#saved-sites table thead tr th, #saved-sites table tbody tr td{
+  font-family: "PT Sans Caption", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  color: rgb(33, 37, 41);
+}
+
+h1::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 25%;
+  background-color: #fec260;
+  bottom: 5px;
+  z-index: -1;
+  transition: 0.5s;
+}
+h1:hover::after {
+  height: 60%;
+}
+header {
+  padding-bottom: 50px;
+  border-bottom: dotted black 2px;
+}
+
+h2 {
+  font-family: "Righteous", sans-serif;
+  font-size: 25px;
+  font-weight: 500;
+  line-break: 30px;
+  background-image: linear-gradient(to right, #3ca55c, #b5ac49 85%);
+  background-clip: text;
+  color: transparent;
+  display: inline-block;
+}
+h2::before {
+  content: "\f02e";
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+}
+h2::after {
+  content: "\f02e";
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+}
+
+.btn-layer {
+  border-bottom: black dotted 2px;
+}
+
+.form-control:focus {
+  border: orange 2px solid;
+  box-shadow: 0 0 0 0.25rem rgba(255, 165, 0, 0.25);
+}
+.visit-btn {
+  background-color: #9eb23b;
+  color: white;
+  border: none;
+  transition: 0.5s;
+}
+.visit-btn:hover{
+    background-color: #8A9E23;
+}
+.delete-btn {
+  background-color: #eb1d36;
+  color: white;
+  border: none;
+  transition: 0.5s;
+}
+.delete-btn:hover{
+    background-color: #D30820;
+}
+#sub-btn{
+    background-color: #d1512d !important;
+    color: white;
+    transition: 0.5s;
+}
+#sub-btn:hover{
+    background-color: #bb4120 !important;
+}
+
